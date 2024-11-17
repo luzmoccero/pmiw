@@ -1,3 +1,8 @@
+//Moccero Maria Luz
+//Comision 4 
+// video yt: https://youtu.be/ueq2wzXRLBU
+
+
 let sonido;
 
 let pantalla = 1;
@@ -9,7 +14,7 @@ function preload() {
   soundFormats('mp3');
   miFuente = loadFont('data/dogica.ttf');
 
- sonido = loadSound('/data/sonido.mp3');
+  sonido = loadSound('/data/sonido.mp3');
 
   for (let i = 1; i <= 19; i++) {
     imagenes[i] = loadImage('data/img' + i + '.png');
@@ -20,10 +25,9 @@ function preload() {
 function setup() {
   createCanvas(640, 480);
   textFont(miFuente);
-  
+
   sonido.setVolume(0.1);
   sonido.play();
-  
 }
 
 function draw() {
@@ -89,7 +93,7 @@ function p1() {
 // Pantalla 2
 function p2() {
   image(imagenes[2], 0, 0, width, height);
-textSize(7);
+  textSize(7);
   // Texto y recuadro
   fill(255, 95);
   noStroke();
@@ -112,8 +116,8 @@ function p3() {
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  
-  text(guiontxt[2], 30, 390,600); //el 600 es para que no supere el ancho de la pantalla
+
+  text(guiontxt[2], 30, 390, 600); //el 600 es para que no supere el ancho de la pantalla
 
   // Botón para pasar a la pantalla 4
   fill(255);
@@ -132,7 +136,7 @@ function p4() {
   rect(20, 380, 600, 80);
   fill(0);
 
-  text(guiontxt[4], 30, 390,600);
+  text(guiontxt[4], 30, 390, 600);
 
   // Botón "Ayudarlo"
   fill(255);
@@ -155,10 +159,10 @@ function pant5() { // dejarlo
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[12], 30, 390,600);
-  text(guiontxt[13], 30, 410,600);
-  text(guiontxt[14], 30, 425,600);
-  text(guiontxt[15], 30, 440,600);
+  text(guiontxt[12], 30, 390, 600);
+  text(guiontxt[13], 30, 410, 600);
+  text(guiontxt[14], 30, 425, 600);
+  text(guiontxt[15], 30, 440, 600);
 
   // agregar un boton para pasar d pantalla
   fill(255);
@@ -174,11 +178,11 @@ function p6() { // AYUDARLO
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[6], 30, 390,600);
-  text(guiontxt[7], 30, 410,600);
-  text(guiontxt[8], 30, 425,600);
-  text(guiontxt[9], 30, 440,600);
-  text(guiontxt[10], 30, 455,600);
+  text(guiontxt[6], 30, 390, 600);
+  text(guiontxt[7], 30, 410, 600);
+  text(guiontxt[8], 30, 425, 600);
+  text(guiontxt[9], 30, 440, 600);
+  text(guiontxt[10], 30, 455, 600);
 
   //boton para pasar d pantalla
   fill(255);
@@ -188,14 +192,14 @@ function p6() { // AYUDARLO
 }
 
 
-function p7() { 
-  image(imagenes[7], 0, 0, width, height); 
+function p7() {
+  image(imagenes[7], 0, 0, width, height);
 
   // Texto y recuadro
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[17], 30, 390,600);
+  text(guiontxt[17], 30, 390, 600);
 
   // Botón "Pelear"
   fill(255);
@@ -216,8 +220,8 @@ function p8() { // (DECIDEN HUIR)
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[19], 30, 390,600);
-  text(guiontxt[20], 30, 410,600);
+  text(guiontxt[19], 30, 390, 600);
+  text(guiontxt[20], 30, 410, 600);
 
   // Botones
   fill(255);
@@ -237,7 +241,7 @@ function p9() { // (DECIDEN PELEAR)
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[22], 30, 390,600);
+  text(guiontxt[22], 30, 390, 600);
 
   // Botón FIN
   fill(255);
@@ -254,7 +258,7 @@ function p10() { // (RENDIRSE)
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[26], 30, 390,600);
+  text(guiontxt[26], 30, 390, 600);
   text("FIN", 585, 455);
 
   // Botón Reiniciar
@@ -270,7 +274,7 @@ function p11() { // (VENGARSE)
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[24], 30, 390,600);
+  text(guiontxt[24], 30, 390, 600);
 
   // Botón
   fill(255);
@@ -285,8 +289,8 @@ function p12() {
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[28], 30, 390,600);
-  text(guiontxt[29], 30, 410,600);
+  text(guiontxt[28], 30, 390, 600);
+  text(guiontxt[29], 30, 410, 600);
 
 
   fill(255);
@@ -301,7 +305,7 @@ function p13() {
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[31], 30, 390,600);
+  text(guiontxt[31], 30, 390, 600);
 
 
   fill(255);
@@ -310,14 +314,14 @@ function p13() {
   text(">", 585, 463);
 }
 
-function p14() { 
+function p14() {
   image(imagenes[13], 0, 0, width, height);
 
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
 
-  text(guiontxt[32], 30, 405,600);
+  text(guiontxt[32], 30, 405, 600);
 
   // Botones
   fill(255);
@@ -337,7 +341,7 @@ function p15() { // SI RECUPERAN SOMBRERO
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[34], 30, 390,600); 
+  text(guiontxt[34], 30, 390, 600);
 
   fill(255);
   rect(580, 450, 20, 20);
@@ -351,7 +355,7 @@ function p16() {
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[38], 30, 390,600);
+  text(guiontxt[38], 30, 390, 600);
 
   fill(255);
   rect(580, 450, 20, 20);
@@ -366,7 +370,7 @@ function p17() {
   rect(20, 380, 600, 80);
   fill(0);
 
-  
+
   text("Matamos a Z?", 30, 400);
   // Botones
   fill(255);
@@ -388,8 +392,8 @@ function p18() { //luffy SI lo mata a z
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[43], 30, 390,600);
-  
+  text(guiontxt[43], 30, 390, 600);
+
 
   fill(255);
   rect(250, 420, 100, 30);
@@ -398,46 +402,44 @@ function p18() { //luffy SI lo mata a z
 }
 
 
-function p19() { //luffy no lo mata a z 
+function p19() { //luffy no lo mata a z
   image(imagenes[15], 0, 0, width, height);
 
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[40], 30, 390,600);
-  text(guiontxt[41], 30, 410,600);
+  text(guiontxt[40], 30, 390, 600);
+  text(guiontxt[41], 30, 410, 600);
 
   fill(255);
   rect(580, 450, 20, 20);
   fill(0);
   text(">", 585, 463);
-  
 }
 
 
-function p20() { 
+function p20() {
   image(imagenes[17], 0, 0, width, height);
 
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[45], 30, 390,600);
+  text(guiontxt[45], 30, 390, 600);
 
-fill(255);
+  fill(255);
   rect(580, 450, 20, 20);
   fill(0);
   text(">", 585, 463);
- 
 }
 
 
-function p21() { 
+function p21() {
   image(imagenes[18], 0, 0, width, height);
 
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[47], 30, 390,600);
+  text(guiontxt[47], 30, 390, 600);
 
 
   fill(255);
@@ -446,30 +448,29 @@ function p21() {
   text("Reiniciar", 265, 435);
 }
 
-function p22() { 
+function p22() {
   image(imagenes[19], 0, 0, width, height);
 
   fill(255, 95);
   rect(20, 380, 600, 80);
   fill(0);
-  text(guiontxt[49], 30, 390,600);
+  text(guiontxt[49], 30, 390, 600);
 
- fill(255);
+  fill(255);
   rect(250, 420, 100, 30);
   fill(0);
   text("Reiniciar", 265, 435);
- 
 }
 
 
 function mousePressed() {
-  
+
   if (sonido.isPlaying()) {
     sonido.stop()
   } else {
     sonido.play();
   }
-  
+
   if (pantalla === 1 && mouseX > 150 && mouseX < 250 && mouseY > 300 && mouseY < 350) {
     pantalla = 2; // Botón START
   } else if (pantalla === 2 && mouseX > 580 && mouseX < 600 && mouseY > 450 && mouseY < 470) {
